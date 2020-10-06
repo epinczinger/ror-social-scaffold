@@ -20,4 +20,12 @@
        <%= render @pending %>
     </ul>
   </article>
+   <article class="timeline">
+    <h3>Invitations to answer:</h3>
+    <ul class="to_answer">
+      <% @to_answer.each do |invitation|%>
+        <li><%= invitation.name %> </li>
+      <% end %>
+    </ul>
+  </article>
 </section>
