@@ -1,5 +1,4 @@
 class FriendshipsController < ApplicationController
-
   def create
     @friendship = current_user.friendships.new(friend_id: params[:user_id], status: false)
 
@@ -9,5 +8,4 @@ class FriendshipsController < ApplicationController
       redirect_to users_path, alert: 'Something went wrong with the invitation.'
     end
   end
-
 end
