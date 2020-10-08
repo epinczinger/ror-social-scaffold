@@ -39,7 +39,8 @@ RSpec.describe User, type: :model do
             new_user = User.new(name: 'Thisisaveryveryverylongname', email: 'ert@hg.com', password: '123123')
             expect(new_user.save).to eq(false)
         end
-
     end
+
+    
 
 end
