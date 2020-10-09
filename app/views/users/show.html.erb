@@ -19,8 +19,13 @@
     <h3>Invitations to answer:</h3>
     <ul class="to_answer">
       <% @to_answer.each do |invitation|%>
-        <li><%= invitation.name %> </li>
+        <li><%= invitation.name  %> <span> wants to be your friend </span>
+     
+          <%= invite_or_pending_btn(invitation) %>
+        
+        </li>
       <% end %>
+
     </ul>
   </article>
 </section>
