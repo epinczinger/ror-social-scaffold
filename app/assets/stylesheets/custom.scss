@@ -321,7 +321,38 @@ form {
     color: #f00;
   }
 }
-
+.btn-accept {
+  padding: 8px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    background-color: $primary-color;
+    color: $primary-color-text;
+}
+.btn-reject {
+  padding: 8px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(209, 66, 66, 0.876);
+    color: $primary-color-text;
+}
+.btn-pending {
+  padding: 8px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(221, 153, 64, 0.876);
+    color: $primary-color-text;
+}
+.btn-invite {
+  padding: 8px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(53, 134, 38, 0.911);
+    color: $primary-color-text;
+}
 @media only screen and (min-width: 480px) {
   form {
     width: 60%;
