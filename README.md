@@ -6,8 +6,6 @@
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4.2
 
-> In this project, we designed an [ERD diagram](https://github.com/epinczinger/ror-social-scaffold/blob/feature/milestone1/docs/ERD%20.pdf) which visually displays the database schema and structure.
-
 
 ## Getting Started
 
@@ -39,6 +37,15 @@ Setup database with:
    rails db:create
    rails db:migrate
 ```
+
+### Testing
+
+In order to run rspec test type this on your command line:
+
+```Ruby
+    rspec --format documentation
+```
+
 
 ### Usage
 
