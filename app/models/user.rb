@@ -45,4 +45,10 @@ class User < ApplicationRecord
     friendship = inverse_friendships.find { |friendship| friendship.user == user }
     friendship.destroy
   end
+
+  def friends_ids
+    friends_ids = friends.map{|friend| friend.id } 
+    friends_ids << self.id
+    friends_ids.compact
+  end
 end
