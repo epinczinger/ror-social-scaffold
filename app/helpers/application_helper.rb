@@ -26,7 +26,7 @@ module ApplicationHelper
       out << link_to('Pending invite', '#', class: 'btn-pending')
     elsif current_user.friend_requests.include?(obj)
       out << link_to('Accept', invite_path(user_id: obj.id), method: :put, class: 'btn-accept')
-      out << " | "
+      out << ' | '
       out << link_to('Reject', reject_path(user_id: obj.id), method: :delete, class: 'btn-reject')
     else
       out << link_to('Invite', invite_path(user_id: obj.id), method: :post, class: 'btn-invite')

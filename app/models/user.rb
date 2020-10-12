@@ -47,8 +47,8 @@ class User < ApplicationRecord
   end
 
   def friends_ids
-    friends_ids = friends.map{|friend| friend.id } 
-    friends_ids << self.id
+    friends_ids = friends.map(&:id)
+    friends_ids << id
     friends_ids.compact
   end
 end
