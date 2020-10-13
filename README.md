@@ -1,6 +1,8 @@
 # Scaffold for social media app with Ruby on Rails
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Esteban-Click%20to%20Contact-brightgreen)](mailto:consult.epinczinger@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/epinczinger?label=Follow%20epinczinger%20on%20Twitter&style=social)](https://twitter.com/epinczinger)
 
+Starting from a repo that included initial code for social media app, I developed this project working with advanced associations focusing on the friendships relationships. 
+
 ## Built With
 
 - Ruby v2.7.0
@@ -46,6 +48,9 @@ In order to run rspec test type this on your command line:
     rspec --format documentation
 ```
 
+### Live Demo on Heroku
+
+[Live link](https://aqueous-savannah-70007.herokuapp.com/)
 
 ### Usage
 
