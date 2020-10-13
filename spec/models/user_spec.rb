@@ -76,8 +76,8 @@ RSpec.describe User, type: :model do
     end
 
     it 'should return true when creating two rows when users are friends ' do
-     @user1.friendships.new(friend_id: @user2.id, status: false).save
-        @user2.confirm_friend(@user1)
+      @user1.friendships.new(friend_id: @user2.id, status: false).save
+      @user2.confirm_friend(@user1)
       expect(@user1.friend?(@user2) && @user2.friend?(@user1)) == true
     end
   end
