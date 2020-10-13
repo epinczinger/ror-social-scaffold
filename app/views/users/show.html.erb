@@ -6,6 +6,7 @@
       <%= render @posts %>
     </ul>
   </article>
+  <% if current_user == @user %>
    <article class="timeline">
     <h3>Pending Invitations:</h3>
     <ul class="pending">
@@ -28,4 +29,5 @@
 
     </ul>
   </article>
+     <% end %>
 </section>
