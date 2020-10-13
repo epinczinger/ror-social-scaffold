@@ -6,4 +6,28 @@
       <%= render @posts %>
     </ul>
   </article>
+  <% if current_user == @user %>
+   <article class="timeline">
+    <h3>Pending Invitations:</h3>
+    <ul class="pending">
+      <% @pending.each do |invitation|%>
+        <li><%= invitation.name %> </li>
+      <% end %>
+    </ul>
+  </article>
+
+   <article class="timeline">
+    <h3>Invitations to answer:</h3>
+    <ul class="to_answer">
+      <% @to_answer.each do |invitation|%>
+        <li><%= invitation.name  %> <span> wants to be your friend </span>
+     
+          <%= invite_or_pending_btn(invitation) %>
+        
+        </li>
+      <% end %>
+
+    </ul>
+  </article>
+     <% end %>
 </section>
